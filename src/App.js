@@ -1,23 +1,30 @@
 import logo from './logo.svg';
 import './App.css';
+import ContactInfo from './components/ContactInfo.jsx'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ContactInfo firstName = {"Jane"}
+      lastName = {"Doe"}
+      age = {45}
+      color = {"Black"}>
+      </ContactInfo>
+      <ContactInfo firstName = {"John"}
+      lastName = {"Smith"}
+      age = {88}
+      color = {"Brown"}>
+      </ContactInfo>
+      <ContactInfo firstName = {"Milalrd"}
+      lastName = {"Fillmore"}
+      age = {50}
+      color = {"Brown"}>
+      </ContactInfo>
+      <ContactInfo firstName = {"Maria"}
+      lastName = {"Smith"}
+      age = {62}
+      color = {"Brown"}>
+      </ContactInfo>
     </div>
   );
 }
